@@ -31,7 +31,7 @@ Caso opte por baixar em _.zip_, descompacte o arquivo baixado e abra o arquivo *
 - [Emojis](https://unicode.org/emoji/charts/full-emoji-list.html)
 - [Imagem original utilizada para o gato](https://fi.pinterest.com/pin/863706034772772147/)
 
-- # 🐳 Dockerização do Projeto (Etapa do Projeto Individual)
+# 🐳 Dockerização do Projeto (Etapa do Projeto Individual)
 
 Este repositório foi **dockerizado** com o objetivo de facilitar sua execução em qualquer máquina que possua o Docker instalado.
 
@@ -80,7 +80,8 @@ docker pull anacotrim/virtual-cat
 
 docker run -d -p 8080:80 anacotrim/virtual-cat
 
-✅ Resultado esperado
+### ✅ Resultado esperado
+
 Se tudo estiver certo, você verá a página inicial do Gato Virtual no navegador, podendo:
 
 Dar nome ao seu gato;
@@ -89,7 +90,8 @@ Interagir com ele;
 
 Usar todos os recursos visuais e de chat da aplicação.
 
-📌 Observações
+### 📌 Observações
+
 O projeto foi mantido como originalmente desenvolvido, sem alterações no código HTML/CSS/JS.
 
 A Dockerização foi feita apenas para facilitar a execução da aplicação.
