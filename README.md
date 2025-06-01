@@ -30,3 +30,70 @@ Caso opte por baixar em _.zip_, descompacte o arquivo baixado e abra o arquivo *
 
 - [Emojis](https://unicode.org/emoji/charts/full-emoji-list.html)
 - [Imagem original utilizada para o gato](https://fi.pinterest.com/pin/863706034772772147/)
+
+- # 🐳 Dockerização do Projeto (Etapa do Projeto Individual)
+
+Este repositório foi **dockerizado** com o objetivo de facilitar sua execução em qualquer máquina que possua o Docker instalado.
+
+Abaixo, segue o passo a passo detalhado para rodar o projeto via Docker.
+
+
+
+## ⚙️ Como rodar este projeto com Docker
+
+### 1. Clone este repositório:
+
+git clone https://github.com/seu-usuário/virtual-cat.git
+cd virtual-cat
+
+2. Crie a imagem Docker:
+
+docker build -t virtual-cat .
+
+Esse comando cria uma imagem Docker com o nome virtual-cat a partir do Dockerfile presente no projeto.
+
+3. Rode o container:
+   
+docker run -d -p 8080:80 virtual-cat
+
+Este comando executa o container em segundo plano (-d) e faz o mapeamento da porta 80 do container para a porta 8080 da sua máquina local.
+
+4. Acesse o site no navegador:
+Se você está rodando diretamente no Linux ou WSL:
+Abra o navegador e acesse:
+
+http://localhost:8080
+
+Se você estiver usando uma máquina virtual (como no VirtualBox):
+Descubra o IP da sua VM:
+ip a
+Procure por uma linha como inet 192.168.x.x.
+Depois, no navegador da sua máquina real, acesse:
+
+http://192.168.x.x:8080
+
+📥 Alternativa: usar a imagem do Docker Hub
+Se preferir, você pode usar diretamente a imagem que subi no Docker Hub:
+
+docker pull anacotrim/virtual-cat
+docker run -d -p 8080:80 anacotrim/virtual-cat
+
+✅ Resultado esperado
+Se tudo estiver certo, você verá a página inicial do Gato Virtual no navegador, podendo:
+
+Dar nome ao seu gato;
+
+Interagir com ele;
+
+Usar todos os recursos visuais e de chat da aplicação.
+
+📌 Observações
+O projeto foi mantido como originalmente desenvolvido, sem alterações no código HTML/CSS/JS.
+
+A Dockerização foi feita apenas para facilitar a execução da aplicação.
+
+Esta atividade faz parte de um projeto individual com entrega obrigatória.
+
+🛠️ Feito por @anacotrim – Junho/2025
+
+
