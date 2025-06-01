@@ -77,6 +77,7 @@ http://192.168.x.x:8080
 Se preferir, você pode usar diretamente a imagem que subi no Docker Hub:
 
 docker pull anacotrim/virtual-cat
+
 docker run -d -p 8080:80 anacotrim/virtual-cat
 
 ✅ Resultado esperado
