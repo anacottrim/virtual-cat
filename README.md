@@ -44,21 +44,22 @@ Abaixo, segue o passo a passo detalhado para rodar o projeto via Docker.
 ### 1. Clone este repositório:
 
 git clone https://github.com/seu-usuário/virtual-cat.git
+
 cd virtual-cat
 
-2. Crie a imagem Docker:
+### 2. Crie a imagem Docker:
 
 docker build -t virtual-cat .
 
 Esse comando cria uma imagem Docker com o nome virtual-cat a partir do Dockerfile presente no projeto.
 
-3. Rode o container:
+### 3. Rode o container:
    
 docker run -d -p 8080:80 virtual-cat
 
 Este comando executa o container em segundo plano (-d) e faz o mapeamento da porta 80 do container para a porta 8080 da sua máquina local.
 
-4. Acesse o site no navegador:
+### 4. Acesse o site no navegador:
 Se você está rodando diretamente no Linux ou WSL:
 Abra o navegador e acesse:
 
