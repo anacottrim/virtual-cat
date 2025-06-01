@@ -43,7 +43,7 @@ Abaixo, segue o passo a passo detalhado para rodar o projeto via Docker.
 
 ### 1. Clone este repositório:
 
-git clone https://github.com/seu-usuário/virtual-cat.git
+git clone https://github.com/anacottrim/virtual-cat.git
 
 cd virtual-cat
 
